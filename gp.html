@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GP CALCULATOR &middot; Nigerian Women Techstars Academy</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="gp.css" type="text/css" />
+    <script src="gp.js"> </script>
+        <img src="PhotoGrid_1568090911308.jpg" width="1400px" height="500px">
+<h1 align="center" style="background-color: black; color:white;"><u>SDGs- Quality Education </u><br/><i><u>Grade Point Calculator</u></i></h1>
+<script type="text/javascript">
+    function calculate()
+    {
+        var x=document.getElementById("result1").value;
+        var y=document.getElementById("result2").value;
+        var z=document.getElementById("result3").value;
+        var a=document.getElementById("result4").value;
+        var result1=parseFloat(x) + parseFloat(y) + parseFloat(z) 
+        + parseFloat(a); // conversion to numbers; this is necessary for +, other    operators will automatically convert 
+        var result5=x%y;
+        
+        //build a string first and then display it all together.
+        //don't forget HTML tags in your output!
+
+        var html="<p>Your GPA is: "+result1/4+"</p>";   
+        document.getElementById("total").innerHTML=html;
+    }
+    </script>
+</head>
+<body>
+        <h2> <u>SUSTAINABLE DEVELOPMENT GOALS </u></h2>
+    <p> <h3> SDGs, also known as the Global Goals, were adopted by all United Nations Member States in 2015 as a universal call to action to end poverty, protect the planet and ensure that all people enjoy peace and prosperity by 2030. the 17 SDGs are <b>integrated</b>- that is, they recognize that action in one area will affect outcomes in others, and that development must balance social, economic and environmental sustainability.</h3></p> 
+    <p> <h4>Through the pledge to Leave No One Behind, countries have committed to fast-track progress for those furthest behind first. That is why the SDGs are designed to bring the world to several life-changing 'zeros', including zero poverty, hunger, AIDS and discrimination against women and girls. everyone is needed to reach these ambitious targets. The creativity, knowhow, technology and financial resources from all of society is necessary to achieve the SDGs in every context. </h4></p>
+   <b> The 17 SDGoals are:</b>
+    <ol> <b>
+        <li>
+            No poverty
+        </li>
+        <li>
+             Zero hunger
+       </li>
+       <li>
+            Good Health and Well-being
+        </li>
+        <li>
+             Quality Education
+        </li>
+         <li>
+             Gender Equality
+         </li>
+        <li>
+            Clean Water and Sanitation
+         </li>
+        <li>
+            Affordable and Clean Energy
+        </li>
+        <li>
+            Decent Work and Economic Growth
+         </li>
+         <li>
+            Industry, Innovation and Infrastructure
+        </li>
+        <li>
+            Reduced Inequality
+         </li>
+         <li>
+             Sustainable Cities and Communities
+        </li>
+        <li>
+            Responsible Consumption and Production
+        </li>
+        <li>
+            Climate Action
+        </li>
+        <li>
+            Life Below Water
+        </li>
+        <li>
+            Life on Land
+        </li>
+        <li>
+            Peace and Justice Strong Institutions
+        </li>
+        <li>
+            Partnerships to achieve the Goal
+         </li></b>
+    </ol>
+    <h2><u>QUALITY EDUCATION-THE GRADE POINT CALCULATOR </u></h2>    
+    <p><h4>Education is one of the most powerful and proven vehicles for sustainable development. This SDGoal ensures that all girls and boys complete free primary and secondary schooling by 2030. It also aims to provide equal access to affordable vocational training, to eliminate gender and wealth disparities, and achieve universal access to a quality higher education. Grading in Education is the process of applying standardized measurements of varying levels of achievement in a course. Grades can be assigned as letters (for example A through F), as a range (for example 1 to 6), as a percentage of a total number of questions answered correctly, or as a number out of a possible total (for example out of 20 or 100).</h4> </p> <p> <h4>The Grade Point Calculator should be created as a phone APP attached to phones and used by Students (undergraduate and graduate), educational institutions, potential employers to assess and compare applicants.</h4></p>   
+     <form action="" id="Class 1">
+   <b>Name:</b><br/><input type="text" maxlength="35" size="45" placeholder="First Name"/><br/><br/>
+   <b>Surname:</b><br/><input type="text" maxlength="35" size="45" placeholder="Surname"/><br/><br/>
+   <b>Course of Study:</b><br/>
+   <select>
+       <option>Web Development</option>
+       <option>Embedded System</option>
+       <option>Game Development</option>
+       <option>Software Design and Development</option>
+   </select>
+            </form>
+            
+            <p>This is the Grade Point Calculator used by Students of Nigerian Women Techsters Academy to check their output. 
+            In order to be a graduate of NWTAcademy, a student has to complete the following 
+            4 classes and have an average grade of 3.5 or above: 
+            Embedded System, Game Development, Development, & Software Design and Development. Please enter the grades you have received in the four
+            classes.
+            </p>
+            
+            <script language="JavaScript">
+            
+            function calculateGpa (form) {
+                var gpa = form.gpa1.value;
+            
+                    if (gpa == "A") {
+                         gpa = 4;
+                         }
+                    if (gpa == "B") {
+                         gpa = 3;
+                         }
+                    if (gpa == "C") {
+                         gpa = 2;
+                         }
+                    if (gpa == "D") {
+                         gpa = 1;
+                        }
+                    if (gpa == "F") {
+                         gpa = 0;
+                        }
+                    if (gpa == "a") {
+                         gpa = 4;
+                         }
+                    if (gpa == "b") {
+                         gpa = 3;
+                         }
+                    if (gpa == "c") {
+                         gpa = 2;
+                         }
+                    if (gpa == "d") {
+                         gpa = 1;
+                        }
+                    if (gpa == "f") {
+                         gpa = 0;
+                        }
+                document.getElementById("result1").innerHTML = gpa;
+            }
+            </script>
+            
+            <form action="" id="Embedded System">Enter your grade:<br>
+            
+            <input type="text" name="gpa1" value="">
+            <input type="button" name="button" value="Calculate" onClick="calculateGpa(this.form)">
+            </form>
+            <div id="result1"></div>
+            
+            
+            <script language="JavaScript">
+            
+            function calculateGpa2 (form) {
+                var gpa = form.gpa2.value;
+            
+                    if (gpa == "A") {
+                         gpa = 4;
+                         }
+                    if (gpa == "B") {
+                         gpa = 3;
+                         }
+                    if (gpa == "C") {
+                         gpa = 2;
+                         }
+                    if (gpa == "D") {
+                         gpa = 1;
+                        }
+                    if (gpa == "F") {
+                         gpa = 0;
+                        }
+                    if (gpa == "a") {
+                         gpa = 4;
+                         }
+                    if (gpa == "b") {
+                         gpa = 3;
+                         }
+                    if (gpa == "c") {
+                         gpa = 2;
+                         }
+                    if (gpa == "d") {
+                         gpa = 1;
+                        }
+                    if (gpa == "f") {
+                         gpa = 0;
+                        }
+                document.getElementById("result2").innerHTML = gpa;
+            }
+            </script>
+            
+            <form action="" id="Game Development">Enter your grade for Game Development class:<br>
+            
+            <input type="text" name="gpa2" value="">
+            <input type="button" name="button" value="Calculate" onClick="calculateGpa2(this.form)">
+            </form>
+            <div id="result2"></div>
+            
+            
+            <script language="JavaScript">
+            function calculateGpa3 (form) {
+                var gpa = form.gpa3.value;
+            
+                    if (gpa == "A") {
+                         gpa = 4;
+                         }
+                    if (gpa == "B") {
+                         gpa = 3;
+                         }
+                    if (gpa == "C") {
+                         gpa = 2;
+                         }
+                    if (gpa == "D") {
+                         gpa = 1;
+                        }
+                    if (gpa == "F") {
+                         gpa = 0;
+                        }
+                    if (gpa == "a") {
+                         gpa = 4;
+                         }
+                    if (gpa == "b") {
+                         gpa = 3;
+                         }
+                    if (gpa == "c") {
+                         gpa = 2;
+                         }
+                    if (gpa == "d") {
+                         gpa = 1;
+                        }
+                    if (gpa == "f") {
+                         gpa = 0;
+                        }
+                document.getElementById("result3").innerHTML = gpa;
+            }
+            </script>
+            
+            <form action="" id="Web Development">Enter your grade for Web Development Class:<br>
+            
+            <input type="text" name="gpa3" value="">
+            <input type="button" name="button" value="Calculate" onClick="calculateGpa3(this.form)">
+            </form>
+            <div id="result3"></div>
+            <script language="JavaScript">
+            function calculateGpa4(form) {
+                var gpa = form.gpa4.value;
+            
+                    if (gpa == "A") {
+                         gpa = 4;
+                         }
+                    if (gpa == "B") {
+                         gpa = 3;
+                         }
+                    if (gpa == "C") {
+                         gpa = 2;
+                         }
+                    if (gpa == "D") {
+                         gpa = 1;
+                        }
+                    if (gpa == "F") {
+                         gpa = 0;
+                        }
+                    if (gpa == "a") {
+                         gpa = 4;
+                         }
+                    if (gpa == "b") {
+                         gpa = 3;
+                         }
+                    if (gpa == "c") {
+                         gpa = 2;
+                         }
+                    if (gpa == "d") {
+                         gpa = 1;
+                        }
+                    if (gpa == "f") {
+                         gpa = 0;
+                        }
+                document.getElementById("result4").innerHTML = gpa; 
+            }
+            </script>
+            
+            <form action="" id="Software Design and Development">Enter your grade for Software Design and Development Class:<br/><br/>
+            
+            <input type="text" name="gpa4" value="">
+            <input type="button" name="button" value="Calculate" onClick="calculateGpa4(this.form)">
+            </form>
+            <div id="result4"></div>
+            <br>
+            <input type="button" id="final" name="button" value="Calculate" onClick="calculate()">
+            <button type="submit"> Reset</button>
+            
+            <div id="total"></div>
+            <br><br><br><br><br> <br><br><br><br><br><br>
+            <div id="result"></div>
+            <img src="download.png" width="1400px" height="200px"> 
+        </body>
+</html>
